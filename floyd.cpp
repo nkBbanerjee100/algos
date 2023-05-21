@@ -37,6 +37,7 @@ void floyd(int src)
         {
             for (int j = 0; j < noV; j++)
             {
+                // via j
                 d[i][j] = min(d[i][j], (d[i][k] + d[k][j]));
                 // if (d[i][j] > d[i][k] + d[k][j])
                 // {
